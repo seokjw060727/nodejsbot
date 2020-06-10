@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = 'NzE5MDk3NzA1Mjk2ODIyMzEz.XuDx9Q.wZakcCWaCU-zxlQpVJl6DltTbwc';
+const token = process.argv.length == 2 ? process.env.token : "";
 
 client.on('ready', () => {
   console.log('Bot ready...');
